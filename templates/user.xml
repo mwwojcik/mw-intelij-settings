@@ -1,0 +1,155 @@
+<templateSet group="user">
+  <template name="met" value="private $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="tmet" value="@org.junit.jupiter.api.DisplayName(&quot;$END$&quot;)&#10;@org.junit.jupiter.api.Test &#10;void test_name_should_be_changed() {&#10; // given &#10; // when &#10; // then &#10; org.assertj.core.api.Fail.fail(&quot;Write your test&quot;); &#10; }" description="Create test method in java" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="nf" value="// @formatter:off &#10;$SELECTION$ &#10;// @formatter:on" description="No format arround selection" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="M" value="$METHOD$($SELECTION$)" description="Surround with method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPNAME" expression="" defaultValue="&quot;propName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="iae" value="throw new IllegalArgumentException(e);" description="Throw new IllegalArgumentException" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="param" value="$PARAMTYPE$ $PARAM_NAME$" description="Adding parameter to method" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMTYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="PARAM_NAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="memb" value="var $NAME$ = $SOURCE$;" description="Create private member in method" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="SOURCE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if($CONDITION$){&#10;    $BODY$&#10;}" description="construct if" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cast" value="($CAST_TO$)" description="Casting" toReformat="false" toShortenFQNames="true">
+    <variable name="CAST_TO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="comp" value="Component(&quot;$NAZWA_LOGICZNA$&quot;,&quot;$NAZWA$&quot;,&quot;$OPIS_SKROCONY$&quot;,&quot;$OPIS_ROZSZERZEONY$&quot;)" description="Create simple C4 Component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAZWA_LOGICZNA" expression="&quot;componentName&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAZWA" expression="&quot;Component name&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPIS_SKROCONY" expression="&quot;Short desc&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPIS_ROZSZERZEONY" expression="&quot;Desc&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="ANTLR" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="EDU_TASK_DESCRIPTION_HINT" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="MXML" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="context" value="Container_Boundary(&quot;$NAZWA_LOGICZNA$&quot;,&quot;$OPIS$&quot;)" description="Create C4 ContextBoundary" toReformat="false" toShortenFQNames="true">
+    <variable name="NAZWA_LOGICZNA" expression="&quot;Logical name&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPIS" expression="&quot;Desc&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="ANTLR" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="EDU_TASK_DESCRIPTION_HINT" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="MXML" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mval" value="$TYPE$ $NAME$ = $SOURCE$;" description="Create local variable in method." toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="&quot;String&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="&quot;myValName&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SOURCE" expression="&quot;new String()&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="smet" value="public static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create public static method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
