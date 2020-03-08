@@ -1,0 +1,8 @@
+<templateSet group="surround">
+  <template name="q" value="for (var item : $SELECTION$){&#10;    $cursor$&#10;}" description="Surrounds selection via foreach" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
