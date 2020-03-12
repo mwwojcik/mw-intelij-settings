@@ -152,4 +152,12 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
+  <template name="pclass" value="class $CLASS_NAME${&#10;    private $ATTR_TYPE$ $ATTR_NAME$;&#10;    &#10;    private $CLASS_NAME$($ATTR_TYPE$ $ATTR_NAME$){&#10;        this.$ATTR_NAME$=$ATTR_NAME$;&#10;    }&#10;    &#10;    public static $CLASS_NAME$ of($ATTR_TYPE$ $ATTR_NAME$){&#10;        return new $CLASS_NAME$($ATTR_NAME$);&#10;    }&#10;}" description="Generate non public Value Class" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTR_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="ATTR_NAME" expression="" defaultValue="&quot;myAttrName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
