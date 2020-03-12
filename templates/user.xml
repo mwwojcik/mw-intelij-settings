@@ -27,7 +27,7 @@
     </context>
   </template>
   <template name="prop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
-    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
     <variable name="PROPNAME" expression="" defaultValue="&quot;propName&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -153,7 +153,7 @@
     </context>
   </template>
   <template name="pclass" value="class $CLASS_NAME${&#10;    private $ATTR_TYPE$ $ATTR_NAME$;&#10;    &#10;    private $CLASS_NAME$($ATTR_TYPE$ $ATTR_NAME$){&#10;        this.$ATTR_NAME$=$ATTR_NAME$;&#10;    }&#10;    &#10;    public static $CLASS_NAME$ of($ATTR_TYPE$ $ATTR_NAME$){&#10;        return new $CLASS_NAME$($ATTR_NAME$);&#10;    }&#10;}" description="Generate non public Value Class" toReformat="false" toShortenFQNames="true">
-    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="" defaultValue="&quot;MyClassName&quot;" alwaysStopAt="true" />
     <variable name="ATTR_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
     <variable name="ATTR_NAME" expression="" defaultValue="&quot;myAttrName&quot;" alwaysStopAt="true" />
     <context>
