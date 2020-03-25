@@ -190,4 +190,15 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
+  <template name="prsmet" value="private static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create private static method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
 </templateSet>
