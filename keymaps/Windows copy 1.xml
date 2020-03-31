@@ -1,4 +1,7 @@
 <keymap version="1" name="Windows copy 1" parent="$default">
+  <action id="ActivateMavenToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl o" />
+  </action>
   <action id="ExpressionTypeInfo" />
   <action id="Maven.RunBuild">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
