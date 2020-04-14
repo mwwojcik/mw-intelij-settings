@@ -90,6 +90,16 @@
       <option name="ENABLED" value="true" />
       <option name="INCLUDE" value="true" />
     </filter>
+    <filter>
+      <option name="PATTERN" value="kotlin.*" />
+      <option name="ENABLED" value="true" />
+      <option name="INCLUDE" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="kotlin.*" />
+      <option name="ENABLED" value="true" />
+      <option name="INCLUDE" value="true" />
+    </filter>
   </component>
   <component name="NodeRendererSettings">
     <CustomRenderers VERSION="8">
@@ -112,11 +122,6 @@
       <evaluation-dialog-mode>CODE_FRAGMENT</evaluation-dialog-mode>
     </general>
     <debuggers>
-      <debugger id="javascript">
-        <configuration>
-          <custom-object-presentation />
-        </configuration>
-      </debugger>
       <debugger id="kotlin_debugger">
         <configuration>
           <option name="DEBUG_IS_FILTER_FOR_STDLIB_ALREADY_ADDED" value="true" />
