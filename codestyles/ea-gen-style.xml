@@ -1,4 +1,6 @@
 <code_scheme name="ea-gen-style" version="173">
+  <option name="RIGHT_MARGIN" value="160" />
+  <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
   <JetCodeStyleSettings>
     <option name="SPACE_BEFORE_EXTEND_COLON" value="false" />
     <option name="IF_RPAREN_ON_NEW_LINE" value="false" />

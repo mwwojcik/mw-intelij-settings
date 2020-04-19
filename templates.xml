@@ -283,10 +283,6 @@
           <option name="key" value="osgisetwithcomparator" />
         </TemplateKey>
         <TemplateKey>
-          <option name="groupName" value="Android" />
-          <option name="key" value="Sfmt" />
-        </TemplateKey>
-        <TemplateKey>
           <option name="groupName" value="spring" />
           <option name="key" value="payloadEndpoint" />
         </TemplateKey>
@@ -465,6 +461,10 @@
         <TemplateKey>
           <option name="groupName" value="Shell Script Hidden" />
           <option name="key" value="shell_command exists" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Android" />
+          <option name="key" value="Sfmt" />
         </TemplateKey>
       </list>
     </option>

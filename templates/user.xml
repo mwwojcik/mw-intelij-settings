@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="met" value="private $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create method in Java" toReformat="false" toShortenFQNames="true">
+  <template name="prmet" value="private $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create private method in Java" toReformat="false" toShortenFQNames="true">
     <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
     <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
@@ -141,7 +141,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="smet" value="public static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create public static method in Java" toReformat="false" toShortenFQNames="true">
+  <template name="psmet" value="public static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create public static method in Java" toReformat="false" toShortenFQNames="true">
     <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
     <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
@@ -152,12 +152,53 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="pclass" value="class $CLASS_NAME${&#10;    private $ATTR_TYPE$ $ATTR_NAME$;&#10;    &#10;    private $CLASS_NAME$($ATTR_TYPE$ $ATTR_NAME$){&#10;        this.$ATTR_NAME$=$ATTR_NAME$;&#10;    }&#10;    &#10;    public static $CLASS_NAME$ of($ATTR_TYPE$ $ATTR_NAME$){&#10;        return new $CLASS_NAME$($ATTR_NAME$);&#10;    }&#10;}" description="Generate non public Value Class" toReformat="false" toShortenFQNames="true">
+  <template name="iclass" value="class $CLASS_NAME${&#10;    private $ATTR_TYPE$ $ATTR_NAME$;&#10;    &#10;    private $CLASS_NAME$($ATTR_TYPE$ $ATTR_NAME$){&#10;        this.$ATTR_NAME$=$ATTR_NAME$;&#10;    }&#10;    &#10;    public static $CLASS_NAME$ of($ATTR_TYPE$ $ATTR_NAME$){&#10;        return new $CLASS_NAME$($ATTR_NAME$);&#10;    }&#10;}" description="Generate internal  Value Class" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="" defaultValue="&quot;MyClassName&quot;" alwaysStopAt="true" />
     <variable name="ATTR_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
     <variable name="ATTR_NAME" expression="" defaultValue="&quot;myAttrName&quot;" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="imet" value="$RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create internal  method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="pclass" value="public class $CLASS_NAME${&#10;    private $ATTR_TYPE$ $ATTR_NAME$;&#10;    &#10;    private $CLASS_NAME$($ATTR_TYPE$ $ATTR_NAME$){&#10;        this.$ATTR_NAME$=$ATTR_NAME$;&#10;    }&#10;    &#10;    public static $CLASS_NAME$ of($ATTR_TYPE$ $ATTR_NAME$){&#10;        return new $CLASS_NAME$($ATTR_NAME$);&#10;    }&#10;}" description="Generate public  Value Class" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="&quot;MyClassName&quot;" alwaysStopAt="true" />
+    <variable name="ATTR_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="ATTR_NAME" expression="" defaultValue="&quot;myAttrName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="pmet" value="public $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create public  method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="prsmet" value="private static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create private static method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
 </templateSet>
