@@ -1,10 +1,15 @@
 <application>
+  <component name="CommunityFileTypes" version="11">
+    <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;" />
+    <extensionMap>
+      <mapping ext="tagx" type="XML" />
+      <mapping ext="jspx" type="XML" />
+    </extensionMap>
+  </component>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping ext="template" type="PLAIN_TEXT" />
-      <mapping ext="index" type="PLAIN_TEXT" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="reg" type="PLAIN_TEXT" />
-      <mapping ext="frm" type="XML" />
     </extensionMap>
   </component>
 </application>
