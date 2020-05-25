@@ -1,7 +1,7 @@
 <templateSet group="Kotlin">
-  <template name="dep" value="fdfdf" description="" toReformat="false" toShortenFQNames="true">
+  <template name="tmet" value="@org.junit.jupiter.api.DisplayName(&quot;$END$&quot;)&#10;@org.junit.jupiter.api.Test &#10; fun test(){&#10;  // given &#10;  // when &#10;  // then org.assertj.core.api.Fail.fail(&quot;Write your test&quot;); &#10;  }" description="Kotlin test method" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
     </context>
   </template>
 </templateSet>
