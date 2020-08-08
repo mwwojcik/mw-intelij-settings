@@ -143,12 +143,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="psmet" value="public static $RETURN$ $METHOD$($ARGTYPE$ $ARGNAME$) {&#10; return new $RET_EXP$() ;&#10; }&#10;" description="Create public static method in Java" toReformat="false" toShortenFQNames="true">
-    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
-    <variable name="METHOD" expression="" defaultValue="&quot;from&quot;" alwaysStopAt="true" />
-    <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
-    <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
-    <variable name="RET_EXP" expression="className()" defaultValue="" alwaysStopAt="true" />
+  <template name="psmet" value="public static $RETURN$ $METHOD$($PARAMS$) {&#10; return $RET_EXP$ ;&#10; }&#10;" description="Create public static method in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
@@ -198,6 +197,16 @@
     <variable name="ARGTYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <variable name="ARGNAME" expression="" defaultValue="&quot;param&quot;" alwaysStopAt="true" />
     <variable name="RET_EXP" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="pfrom" value="public static $RETURN$ $METHOD$($PARAMS$) {&#10; return new $RET_EXP$() ;&#10; }&#10;" description="Create public static method from in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;from&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RET_EXP" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
