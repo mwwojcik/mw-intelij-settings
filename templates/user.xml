@@ -219,4 +219,10 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="test" value="$INITIALIZATION_LIST$" description="test" toReformat="false" toShortenFQNames="true">
+    <variable name="INITIALIZATION_LIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
