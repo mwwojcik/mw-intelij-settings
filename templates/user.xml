@@ -202,11 +202,8 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="pfrom" value="public static $RETURN$ $METHOD$($PARAMS$) {&#10; return new $RET_EXP$() ;&#10; }&#10;" description="Create public static method from in Java" toReformat="false" toShortenFQNames="true">
-    <variable name="RETURN" expression="className()" defaultValue="" alwaysStopAt="true" />
-    <variable name="METHOD" expression="" defaultValue="&quot;from&quot;" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="RET_EXP" expression="className()" defaultValue="" alwaysStopAt="true" />
+  <template name="pfrom" value="$TEXT$" description="Create public static method from in Java" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="fromMethod()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
@@ -215,6 +212,12 @@
   <template name="ssingleton" value="    &#10;&#9;private static $CLASSNAME$ $NAME$;&#10;&#10;    public static $CLASSNAME$ of() {&#10;&#10;        if (Objects.isNull($NAME$)) {&#10;            $NAME$ = new $CLASSNAME$();&#10;        }&#10;        return $NAME$;&#10;    }" description="Creates simple singleton code with of() method" toReformat="false" toShortenFQNames="true">
     <variable name="CLASSNAME" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="instance" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="pretfrom" value="$TEXT$" description="Creates code return Type.from()" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
     </context>
