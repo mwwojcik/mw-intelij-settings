@@ -222,7 +222,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="returnfrom" value="$TEXT$" description="Create return from object (can be used only in methods)" toReformat="false" toShortenFQNames="true">
+  <template name="pretfrom" value="$TEXT$" description="Create code returns new object created by FROM method (can be used only in methods)" toReformat="false" toShortenFQNames="true">
     <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />

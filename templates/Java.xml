@@ -7,4 +7,10 @@
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="preturnfrom" value="$TEXT$" description="generates code return Type.from()" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
