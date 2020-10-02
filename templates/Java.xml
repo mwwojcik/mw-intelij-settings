@@ -1,5 +1,5 @@
 <templateSet group="Java">
-  <template name="inn" value="if (Objects.notNull($VAR$)) {&#10;$END$&#10;}" description="Inserts 'if not null' statement" toReformat="true" toShortenFQNames="true">
+  <template name="inn" value="if (Objects.nonNull($VAR$)) {&#10;$END$&#10;}" description="Inserts 'if not null' statement" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
     <context />
   </template>
