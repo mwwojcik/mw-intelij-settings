@@ -1,7 +1,6 @@
 <application>
   <component name="DefaultFont">
     <option name="FONT_SIZE" value="12" />
-    <option name="FONT_FAMILY" value="JetBrains Mono" />
     <option name="LINE_SPACING" value="1.1" />
   </component>
   <component name="EditorSettings">
@@ -32,5 +31,6 @@
       </map>
     </option>
     <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+    <option name="SHOW_QUICK_DOC_ON_MOUSE_OVER_ELEMENT" value="false" />
   </component>
 </application>
