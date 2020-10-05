@@ -22,7 +22,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="M" value="$METHOD$($SELECTION$)" description="Surround with method" toReformat="false" toShortenFQNames="true">
+  <template name="m" value="$METHOD$($SELECTION$)" description="Surround with method" toReformat="false" toShortenFQNames="true">
     <variable name="METHOD" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -202,21 +202,27 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="pfrom" value="$TEXT$" description="Create public static method from in Java" toReformat="false" toShortenFQNames="true">
+  <template name="pfrom" value="$TEXT$&#10;" description="Create public static method from in Java" toReformat="false" toShortenFQNames="true">
     <variable name="TEXT" expression="fromMethod()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="ssingleton" value="    &#10;&#9;private static $CLASSNAME$ $NAME$;&#10;&#10;    public static $CLASSNAME$ of() {&#10;&#10;        if (Objects.isNull($NAME$)) {&#10;            $NAME$ = new $CLASSNAME$();&#10;        }&#10;        return $NAME$;&#10;    }" description="Creates simple singleton code with of() method" toReformat="false" toShortenFQNames="true">
+  <template name="ssingleton" value="    &#10;&#9;private static $CLASSNAME$ $NAME$;&#10;&#9;&#10;&#9;  private $CLASSNAME$(){}&#10;&#10;    public static $CLASSNAME$ of() {&#10;&#10;        if (Objects.isNull($NAME$)) {&#10;            $NAME$ = new $CLASSNAME$();&#10;        }&#10;        return $NAME$;&#10;    }" description="Creates simple singleton code with of() method" toReformat="false" toShortenFQNames="true">
     <variable name="CLASSNAME" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="instance" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="pretfrom" value="$TEXT$" description="Creates code return Type.from()" toReformat="false" toShortenFQNames="true">
+  <template name="test" value="$INITIALIZATION_LIST$" description="test" toReformat="false" toShortenFQNames="true">
+    <variable name="INITIALIZATION_LIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="pretfrom" value="$TEXT$" description="Create code returns new object created by FROM method (can be used only in methods)" toReformat="false" toShortenFQNames="true">
     <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />

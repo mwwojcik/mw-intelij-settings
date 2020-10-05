@@ -1,0 +1,16 @@
+<templateSet group="Java">
+  <template name="inn" value="if (Objects.nonNull($VAR$)) {&#10;$END$&#10;}" description="Inserts 'if not null' statement" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ifn" value="if (Objects.isNull($VAR$)) {&#10;$END$&#10;}" description="Inserts 'if null' statement" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="var" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="preturnfrom" value="$TEXT$" description="generates code return Type.from()" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
