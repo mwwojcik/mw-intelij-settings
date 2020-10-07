@@ -28,7 +28,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="prop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
+  <template name="pprop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
     <variable name="PROPNAME" expression="" defaultValue="&quot;propName&quot;" alwaysStopAt="true" />
     <context>
