@@ -10,7 +10,7 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
-  <template name="tmet" value="@org.junit.jupiter.api.DisplayName(&quot;$NAME$&quot;)&#10;@org.junit.jupiter.api.Test &#10;void $METNAME$() {&#10; // given &#10; // when &#10; // then &#10; org.assertj.core.api.Fail.fail(&quot;Write your test&quot;); &#10; }" description="Create test method in java" toReformat="false" toShortenFQNames="true">
+  <template name="tmet" value="@org.junit.jupiter.api.DisplayName(&quot;$NAME$&quot;)&#10;@org.junit.jupiter.api.Test &#10;void $METNAME$() {&#10; // given&#10; // when&#10; // then &#10; org.assertj.core.api.Fail.fail(&quot;Write your test&quot;); &#10; }" description="Create test method in java" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="METNAME" expression="camelCase(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
