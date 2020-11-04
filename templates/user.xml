@@ -28,7 +28,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="pprop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
+  <template name="prop" value="private $TYPE$ $PROPNAME$ ;" description="Create private property" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
     <variable name="PROPNAME" expression="" defaultValue="&quot;propName&quot;" alwaysStopAt="true" />
     <context>
@@ -218,6 +218,12 @@
   </template>
   <template name="test" value="$INITIALIZATION_LIST$" description="test" toReformat="false" toShortenFQNames="true">
     <variable name="INITIALIZATION_LIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="pretfrom" value="$TEXT$" description="Create code returns new object created by FROM method (can be used only in methods)" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="returnFrom()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
     </context>
