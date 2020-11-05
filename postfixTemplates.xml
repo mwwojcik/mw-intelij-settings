@@ -1,0 +1,16 @@
+<application>
+  <component name="PostfixTemplates">
+    <template id="ifnotnull@userDefined" key=".ifnotnull" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="notPrimitive" />
+      </conditions>
+      <template name="fakeKey" value="if(Objects.nonNull($EXPR$)){&#10;    &#10;    }" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="ifnull@userDefined" key=".ifnull" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions>
+        <condition id="notPrimitive" />
+      </conditions>
+      <template name="fakeKey" value="if(Objects.isNull($EXPR$)){&#10;    &#10;}" toReformat="true" toShortenFQNames="true" />
+    </template>
+  </component>
+</application>
